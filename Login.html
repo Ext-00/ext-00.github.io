@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="CSS/login.css">
+    <title>Rohit's Website | Login</title>
+    <link href="Pictures/amazonecs.svg" rel="icon" type="image/x-icon">
+</head>
+<body>
+
+</body>
+<form name="loginform" action="Da.html">
+  
+    <h1>Login</h1>
+  <div class="container">
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname">
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw">
+
+    <script>
+      function login(){
+            var uname = document.loginform.uname.value;
+            var psw = document.loginform.psw.value;
+      if(uname == "" || psw == ""){
+              alert("Fill out the Username and Password");
+         }else{
+      if((uname == "rohit" || uname == "rohit") && psw == "admin"){
+              document.loginform.submit();
+        }else{
+             alert("Username or Password is wrong");
+             } 
+              }
+                      }
+        function Forgot() {
+          alert("Username: rohit | Password:admin")
+        }
+
+        function signup() {
+          alert("Email- abhinavranjan222@gmail.com | and write sign up R/W")
+        }
+      </script>
+    <button type="button" onclick="login()">Login</button>
+  </div>
+  <button2 type="submit" onclick="Forgot()">Forgot Password</button2>
+  <button3 type="submit" onclick="signup()">Sign up</button3>
+  </div>
+</form>
+</html>

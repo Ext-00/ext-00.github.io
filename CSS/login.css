@@ -1,0 +1,76 @@
+body{
+  color: white;
+  background-color: #202020;
+}
+
+/* Bordered form */
+form {
+  border: 3px solid #202020;
+}
+
+/* Full-width inputs */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #4285F4;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #0F9D58;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  transition: 0.5s;
+}
+
+/* Add a hover effect for buttons */
+button:hover {
+  opacity: 0.6;
+  transition: 0.5s;
+}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+}
+
+/* The "Forgot password" button */
+button2 {
+  background-color: white;
+  color: black;
+  float: right;
+  padding: 10px;
+  transition: 0.5s;
+}
+
+button2:hover {
+  opacity: 0.6;
+  transition: 0.5s;
+}
+
+button3 {
+  background-color: white;
+  color: black;
+  float: left;
+  padding: 10px;
+  transition: 0.5s;
+}
+
+button3:hover {
+  opacity: 0.6;
+  transition: 0.5s;
+}
+
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+* {
+    font-family: 'Open Sans', sans-serif;
+}

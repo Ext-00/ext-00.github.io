@@ -1,0 +1,77 @@
+* {
+    Padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    Color: White;
+    background-color: #202020;
+}
+
+a button {
+    background-color: #13c8cc;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 10%;
+    transition: 0.5s;
+}
+
+a button:hover {
+    color: white;
+    background-color: #13c9cc96;
+    transition: 0.5s;
+}
+
+span {
+    position:absolute;
+    opacity: .4s;
+}
+
+a button span {
+    background-color: #00d9FF;
+    box-shadow: 0 0 20px #00d9FF;
+    transition: 0.5s;
+}
+
+a button span {
+    top:0;
+    left: 0;
+    width: 0%;
+    height: 1px;
+}
+
+a button:hover span {
+    width: 100%;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+h1 {
+    cursor:default;
+    color: whitesmoke;
+    transition: .5s;
+}
+
+h1:hover {
+    color: #fff;
+    text-shadow: 0 0 5px #03e9f4,
+                 0 0 25px #03e9f4,
+                 0 0 50px #03e9f4,
+                0 0 100px #03e9f4;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+@media (max-width:800px) {
+    a button {
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+    }
+}
