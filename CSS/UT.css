@@ -12,44 +12,100 @@ body {
 }
 
 a button {
-    background-color: #13c8cc;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
+    position: relative;
+    margin: 0 15px;
+    width: 180px;
+    height: 50px;
+    line-height: 40px;
+    font: 20px sans-serif;
+    letter-spacing: 1px;
+    background: transparent;
+    color: #eeeeee;
     cursor: pointer;
-    width: 10%;
-    transition: 0.5s;
+    transition: all .4s;
+    border: transparent;
 }
 
-a button:hover {
-    color: white;
-    background-color: #13c9cc96;
-    transition: 0.5s;
+a button:nth-child(1):hover {
+    color: #40f11c;
 }
+
+a button:nth-child(2):hover {
+    color: #ff2781;
+}
+
+a button:nth-child(3):hover {
+    color: #00d9ff;
+}
+
+/*a button:nth-child(4):hover {
+    color: #fbff00;
+}*/
 
 span {
-    position:absolute;
+    position: absolute;
     opacity: .4s;
+    transition: all .4s;
 }
 
-a button span {
-    background-color: #00d9FF;
-    box-shadow: 0 0 20px #00d9FF;
-    transition: 0.5s;
+a button:nth-child(1) span {
+    background: #40f11c;
+    box-shadow: 0 0 20px #40f11c;
 }
 
-a button span {
-    top:0;
+a button:nth-child(2) span {
+    background: #ff2781;
+    box-shadow: 0 0 20px #ff2781;
+}
+
+a button:nth-child(3) span {
+    background: #00d9ff;
+    box-shadow: 0 0 20px #00d9ff;
+}
+
+a button:nth-child(4) span {
+    background: #fbff00;
+    box-shadow: 0 0 20px #fbff00;
+}
+
+a button span:nth-child(1) {
+    top: 0;
     left: 0;
     width: 0%;
     height: 1px;
 }
 
-a button:hover span {
+a button span:nth-child(2) {
+    top: 0;
+    right: 0;
+    width: 1px;
+    height: 0%;
+}
+
+a button span:nth-child(3) {
+    bottom: 0;
+    right: 0;
+    width: 0%;
+    height: 1px;
+}
+
+a button span:nth-child(4) {
+    bottom: 0;
+    left: 0;
+    width: 1px;
+    height: 0%;
+}
+
+a button:hover span:nth-child(1),
+a button:hover span:nth-child(3) {
     width: 100%;
     opacity: 1;
-    transition: 0.5s;
+}
+
+a button:hover span:nth-child(2),
+a button:hover span:nth-child(4) {
+    height: 100%;
+    opacity: 1;
 }
 
 h1 {
