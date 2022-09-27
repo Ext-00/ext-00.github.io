@@ -21,10 +21,10 @@ body {
     background-size: cover;
     border: 12px solid #1b2021;
     border-radius: 50%;
-    box-shadow: -4px -4px 6px rgba(60, 60, 60, .5),
-                inset 4px 4px 6px rgba(0, 0, 0, .5),
-                inset -4px -4px 6px rgba(60, 60, 60, .3),
-                4px 4px 6px rgba(10, 10, 10, .3);
+    box-shadow:  -4px -4px 6px rgba(60, 60, 60, .5),
+                 inset 4px 4px 6px rgba(0, 0, 0, .5),
+                 inset -4px -4px 6px rgba(60, 60, 60, .3),
+                 4px 4px 6px rgba(10, 10, 10, .3);
 }
 
 .clock::before {
