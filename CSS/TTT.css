@@ -1,10 +1,9 @@
-
 * {
     margin: 0;
     padding: 0;
     border: 0;
     box-sizing: border-box;
-    font-family: 'DynaPuff', cursive;
+    font-family: 'Open Sans', sans-serif;
 }
 
 body {
@@ -12,10 +11,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #39b38e;
+    background: #3990b3;
 }
-
-/* Selection Styles */
 
 .selection {
     padding: 50px 80px;
@@ -63,8 +60,6 @@ body {
     background: #B33951;
 }
 
-/* FadeOut & FadeIn Animations */
-
 .fadeOut {
     animation: hide .3s linear alternate;
 }
@@ -97,8 +92,6 @@ body {
     }
 }
 
-/* PlayBoard Style*/
-
 .play-board {
     display: none;
     padding: 30px;
@@ -120,8 +113,6 @@ table td {
     cursor: pointerr;
     transition: .4s linear;
 }
-
-/* Reset Button */
 
 .reset {
     cursor: pointer;
@@ -153,4 +144,6 @@ table td {
     font-size: 30px;
     font-weight: 500;
     font-variant: small-caps;
-}b
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');

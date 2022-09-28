@@ -1,4 +1,4 @@
-const election = document.querySelector('.selection');
+const selection = document.querySelector('.selection');
 const playBoard = document.querySelector('.play-board');
 const winner = document.querySelector('.winner');
 
