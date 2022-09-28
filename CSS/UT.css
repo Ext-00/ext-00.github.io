@@ -126,8 +126,24 @@ h1:hover {
 
 @media (max-width:800px) {
     a button {
+        background-color: #13bb6da2;
+        color: white;
+        padding: 14px 20px;
+        margin: 15px 0;
+        border: none;
+        cursor: pointer;
         width: 100%;
         flex-direction: column;
-        text-align: center;
+        text-align: justify;
     }
+
+    span{
+        display: none;
+    }
+
+    a button:nth-child(1):hover {
+        color: white;
+        background-image: linear-gradient(to bottom right, #13c8cc , #1399bb);
+    }
+
 }

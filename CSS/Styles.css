@@ -58,7 +58,7 @@ body {
     transition: 0.5s;
 }
 
-span {
+nav ul li a span {
     position:absolute;
     opacity: .4s;
 }
