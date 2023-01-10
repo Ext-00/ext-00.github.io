@@ -12,22 +12,23 @@ body {
     position: relative;
     justify-content: space-between;
     align-items: center;
-    background-color: #141414;
+    background: transparent;
     color: white;
 }
 
 .brand-title {
-    font-size: 1.5rem;
+    font-size: 1.9rem;
     margin: .5rem;
     transition: .5s;
+    text-shadow: -5px  5px 10px #3f3f3f;
 }
 
 .brand-title:hover {
     color: #fff;
-    text-shadow: 0 0 5px #00f2ff,
-                 0 0 25px #00f2ff,
-                 0 0 50px #00f2ff,
-                0 0 100px #00f2ff;
+    text-shadow: 0 0 5px #df0000,
+                 0 0 25px #df0000,
+                 0 0 50px #df0000,
+                0 0 100px #df0000;
 }
 
 .navbar-links {
@@ -92,6 +93,7 @@ nav ul li a span {
     justify-content: space-between;
     width: 30px;
     height: 21px;
+    align-items: center;
 }
 
 .toggle-button .bar {
@@ -104,43 +106,105 @@ nav ul li a span {
 h1 {
     color: white;
     transition: .5s;
-}
-
-h1:hover {
-    color: #fff;
-    text-shadow: 0 0 5px #00f2ff,
-                 0 0 25px #00f2ff,
-                 0 0 50px #00f2ff,
-                0 0 100px #00f2ff;
+    margin-left: 10px;
+    margin-bottom: 5px;
 }
 
 pg1 {
     color:white;
+    margin-left: 10px;
 }
 
 pg2 {
     color: white;
+    margin-left: 10px;
 }
 
 script {
    margin: auto; 
 }
 
-del {
-    color: #fff;
-    transition: .5s;
-}
-
-del:hover {
-    color: #fff;
-    text-shadow: 0 0 5px #ff1500,
-                 0 0 25px #ff1500,
-                 0 0 50px #ff1500,
-                0 0 100px #ff1500;
+.overlay {
+    display: none;
 }
 
 @media (max-width: 800px) {
     .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+        position: relative;
+        top: 25%;
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links ul li {
+        position: relative;
+        top: 25%;
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;      
+    }
+    
+    .overlay {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: rgb(0,0,0);
+        background-color: rgba(0,0,0, 0.9);
+        overflow-x: hidden;
+        transition: 0.5s;
+        display: block;
+      }
+      
+      .overlay-content {
+        position: relative;
+        top: 25%;
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+      }
+      
+      .overlay a {
+        padding: 8px;
+        text-decoration: none;
+        font-size: 36px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+      }
+      
+      .overlay a:hover, .overlay a:focus {
+        color: #f1f1f1;
+      }
+      
+      .overlay .closebtn {
+        position: absolute;
+        top: 20px;
+        right: 45px;
+        font-size: 60px;
+      }
+
+}
+
+/*     .navbar {
         flex-direction: column;
         align-items: flex-start;
     }
@@ -169,5 +233,5 @@ del:hover {
 
     .navbar-links.active {
         display: flex;
-    }
-}
+        
+    } */

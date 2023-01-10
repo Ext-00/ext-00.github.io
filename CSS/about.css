@@ -8,3 +8,110 @@ body {
     background-color: #333333;
     color: white;
 }
+
+a button {
+    position: relative;
+    margin: 0 15px;
+    width: 90px;
+    height: 25px;
+    line-height: 40px;
+    font: 20px sans-serif;
+    letter-spacing: 1px;
+    background: transparent;
+    color: #eeeeee;
+    cursor: pointer;
+    transition: all .4s;
+    border: transparent;
+    margin-left: 10px;
+    margin-top:10px;
+}
+
+a button:nth-child(1):hover {
+    color: #00d9ff;
+}
+
+a button:nth-child(2):hover {
+    color: #ff2781;
+}
+
+a button:nth-child(3):hover {
+    color: #00d9ff;
+}
+
+span {
+    position: absolute;
+    opacity: .4s;
+    transition: all .4s;
+}
+
+a button:nth-child(1) span {
+    background: #00d9ff;
+    box-shadow: 0 0 20px #00d9ff;
+}
+
+a button:nth-child(2) span {
+    background: #ff2781;
+    box-shadow: 0 0 20px #ff2781;
+}
+
+a button:nth-child(3) span {
+    background: #00d9ff;
+    box-shadow: 0 0 20px #00d9ff;
+}
+
+a button:nth-child(4) span {
+    background: #fbff00;
+    box-shadow: 0 0 20px #fbff00;
+}
+
+a button span:nth-child(1) {
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 1px;
+}
+
+a button span:nth-child(2) {
+    top: 0;
+    right: 0;
+    width: 1px;
+    height: 0%;
+}
+
+a button span:nth-child(3) {
+    bottom: 0;
+    right: 0;
+    width: 0%;
+    height: 1px;
+}
+
+a button span:nth-child(4) {
+    bottom: 0;
+    left: 0;
+    width: 1px;
+    height: 0%;
+}
+
+a button:hover span:nth-child(1),
+a button:hover span:nth-child(3) {
+    width: 100%;
+    opacity: 1;
+}
+
+a button:hover span:nth-child(2),
+a button:hover span:nth-child(4) {
+    height: 100%;
+    opacity: 1;
+}
+
+h1 {
+    cursor:default;
+    color: whitesmoke;
+    transition: .5s;
+    margin-left: 10px;
+}
+
+pg1 {
+    margin-left: 10px;
+    justify-content: center;
+}

@@ -20,7 +20,7 @@
     <body>
       <nav class="navbar">
         <div class="brand-title">Ext-00's Website</div>
-        <a href="#" class="toggle-button">
+        <a onclick="openNav()" class="toggle-button">
           <span class="bar"></span>
           <span class="bar"></span>
           <span class="bar"></span>
@@ -37,20 +37,24 @@
               <span></span>
             </a></li>
           </ul>
+      </div>
+    </div>
         </div>
       </nav>
-      <h1>My Website</h1>
-      <pg1>This Website is completely Html and css and some JS for compatibility for phones.</pg1>
-       <br>
-      <pg2>It works pretty good it now uses CSS and JS and HTML.</pg2>
+      <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+          <a href="UT.html">Utilities</a>
+          <a href="About.html">About</a>
+        </div>
+      </div>
+      <h1>Update v2.7</h1>
+      <pg1>Added background.</pg1>
       <br>
-      <pg2>JS doesn't seem to work on Tic tac toe. I dont know why it doesn't work</pg2>
+      <pg1>Removed color from behind navbar.</pg1>
       <br>
-      <h1>Update</h1>
-      <pg2>v2.6</pg2>
+      <pg1>New hamburger menu.</pg1>
       <br>
-      <pg2>Updated Home page.</pg2>
-      <br>
-      <pg2>Dark mode But darker</pg2>
+      <pg1>Deleted things+ moved things.<pg1>
     </body>
 </html>

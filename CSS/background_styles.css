@@ -5,5 +5,9 @@
 }
 
 html {
-    background-color: #242424;
+    background-image: url('csspic/wall.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
 }
+
