@@ -19,7 +19,8 @@ body {
 
 .brand-title {
     font-size: 1.9rem;
-    margin: .5rem;
+    margin: .3rem;
+    margin-left: 3.5rem;
     transition: .5s;
     text-shadow: -5px  5px 10px #3f3f3f;
 }
@@ -87,8 +88,8 @@ nav ul li a span {
 
 .toggle-button {
     position: absolute;
-    top: .75rem;
-    right: 1rem;
+    top: 1rem;
+    left: 1rem;
     display: none;
     flex-direction: column;
     justify-content: space-between;
