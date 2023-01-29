@@ -22,8 +22,7 @@ h9 {
     margin: .5rem;
     transition: .5s;
     text-shadow: -5px  5px 10px #3f3f3f;
-    cursor:pointer;
-    font-size: clamp(.75rem, 2.5vw, 2.5rem);
+    cursor: pointer;
 }
 
 .navbar-links {
@@ -139,6 +138,7 @@ script {
     h9 {
     margin: .3rem;
     margin-left: 3.5rem;
+    margin-top: .5rem;
     }
 
     .navbar-links {
