@@ -17,20 +17,12 @@ body {
     transition: 0.5s;
 }
 
-.brand-title {
+h9 {
     font-size: 1.9rem;
-    margin: .3rem;
-    margin-left: 3.5rem;
+    margin: .5rem;
     transition: .5s;
     text-shadow: -5px  5px 10px #3f3f3f;
-}
-
-.brand-title:hover {
-    color: #fff;
-    text-shadow: 0 0 5px #df0000,
-                 0 0 25px #df0000,
-                 0 0 50px #df0000,
-                0 0 100px #df0000;
+    cursor:pointer;
 }
 
 .navbar-links {
@@ -139,6 +131,11 @@ script {
 
     .toggle-button {
         display: flex;
+    }
+
+    h9 {
+    margin: .3rem;
+    margin-left: 3.5rem;
     }
 
     .navbar-links {
