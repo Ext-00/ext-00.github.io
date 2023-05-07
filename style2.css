@@ -1,0 +1,37 @@
+body{
+    cursor:none;
+}
+.c-cursor {
+    position: fixed;
+    z-index: 420;
+    pointer-events: none;
+    border-radius: 200px;
+    background-color: #fff9;
+    backdrop-filter: invert(1) saturate(0);
+    opacity: 0.5;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.c-cursor_active {
+    background-color: #fffa;
+    opacity: 0.5;
+    backdrop-filter: none;
+}
+
+.c-cursor-lift_active {
+    background-color: #fff9;
+    backdrop-filter: invert(1) saturate(0);
+    opacity: 0.5;
+    backdrop-filter: none;
+}
+.toggle-circle {
+    margin: 2.5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.533);
+    border-radius: 50%;
+    transition: background-color 0.5s;
+    height: 36px;
+    width: 36px;
+} 

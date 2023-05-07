@@ -42,13 +42,64 @@ document.querySelector("h9").onmouseover = event => {
   }, 30);
 }
 
-const blob = document.getElementById("blob");
+//const blob = document.getElementById("blob");
 
-window.onpointermove = event => { 
-  const { clientX, clientY } = event;
-  
-  blob.animate({
-    left: `${clientX}px`,
-    top: `${clientY}px`
-  }, { duration: 3000, fill: "forwards" });
+//window.onpointermove = event => { 
+//  const { clientX, clientY } = event;
+//  
+ // blob.animate({
+//    left: `${clientX}px`,
+//    top: `${clientY}px`
+//  }, { duration: 3000, fill: "forwards" });
+//}
+
+var CoCe = document.getElementById('CC');
+
+function openCC() {
+  CC.top = '0';
+  CoCe.style.opacity = '1';
+  CoCe.style.zIndex = '0';
+  CoCe.style.backdropFilter = 'blur(10px)';
+  body.transform = 'scale(0.9)';
+  dock.transform = 'scale(0.9)';
+  app.transform = 'scale(0.9)';
+  trig.padding = '20px 20px';
+  trig.width = '275px';
+  batteryDisplay.style.fontWeight = '900';
+  batteryDisplay.style.fontSize = '15px';
+  icon1.style.height = '30px';
+  icon2.transform = 'scale(1.4)';
+  icon2.margin = '6px';
+}
+CoCe.addEventListener('wheel', async function () {
+  await delay(100);
+  if (document.getElementById('top').getBoundingClientRect().y < 0) {
+      trig.backdropFilter = 'blur(20px)';
+      trig.borderBottom = '1px #fff2 solid';
+      trig.borderRadius = '0px';
+  }
+  else {
+      trig.backdropFilter = '';
+      trig.borderBottom = '';
+      trig.borderRadius = '4px';
+  }
+});
+function closeCC() {
+  CC.top = '-100%';
+  CoCe.style.opacity = '0';
+  CoCe.style.zIndex = '-1';
+  body.transform = 'scale(1)';
+  dock.transform = 'scale(1)';
+  app.transform = 'scale(1)';
+  trig.padding = '0';
+  trig.margin = '0';
+  trig.width = '';
+  trig.backdropFilter = '';
+  trig.borderBottom = '';
+  trig.borderRadius = '4px';
+  batteryDisplay.style.fontWeight = '500';
+  batteryDisplay.style.fontSize = '11px';
+  icon1.style.height = '20px';
+  icon2.transform = 'scale(1)';
+  icon2.margin = '2px';
 }
