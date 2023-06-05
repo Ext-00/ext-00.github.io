@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXT-00 | LOL</title>
+</head>
+<body>
+    <p1>superuser@Kali:~$ </p1><p3>netuser -info --ls --f</p3>
+    <p id="demo"></p>
+</body>
+<script>
+var i = 0;
+var txt = 'Reading usernet.info\nAccess Denied Chrome/113.0.0.0 // Safari/537.36\nAccess Denied Chrome/113.0.0.0 // Safari/537.36\nStarting service Force Pull usernet.info... Done\nStarting service usernet.bypass.EXTRA_SECURITY... Done\n \n \n \nIP. 92.28.211.234\nN: 43.7462\nW: 12.4893\nSS Number: 6979191519182016\nIPv6: fe80::5dcd::ef69::fb22::d9888%12\nUPNP: Enabled\nDMZ: 10.112.42.15\nMAC: 5A:7 8:3E:7E:00\nISP : Ucom Airtel &&/or Jio\nDNS: 8.8.8.8\nALT DNS: 1.1.1.8.1\nDNS SUFFIX: Dlink\nWAN: 100.23.10.15\nGATEWAY: 192.168.0.1\nSUBNET MASK: 255.255.0.255\nUDP OPEN PORTS: 8080.80\nTCP OPEN PORTS: 443\nROUTER VENDOR : NONE\nDEVICE VENDOR: Android 11/12 x64\nCONNECTION TYPE: Wireless/Cellular\nICMP HOPS: 192168.0.1\n192168.1.1\n100.73.43.4\nhost-132.12.32.167.ucom.com\nhost-66.120.12.111.ucom.com\n36.134.67.189\n216.239.78.111\nsof02s32-in-f14.1e100.net\nTOTAL HOPS: 8\nACTIVE SERVICES:\n[HTTP] 192.168.3.1:80=>92.28.211.234:80\n[HTTP] 192.168.3.1:443=>92.28.211.234:443\n[UDP] 192.168.0.1 :788=>192.168.1:6557\n[TCP] 192.168.1.1:67891=>92.28.211.234:345\n[TCP] 192.168.52.43:7777=>192.168.1.1:7778\n[TCP] 192.168.78.12:8 98=>192';
+var speed = 30;
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("demo").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+typeWriter();
+</script>
+<link rel="stylesheet" href="CSS/ip.css">
+</html>
