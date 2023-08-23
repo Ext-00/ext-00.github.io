@@ -222,7 +222,7 @@ script {
     top: 50%;
     translate: -50% -50%;
     border-radius: 50%;
-    background: linear-gradient(to right, aquamarine, mediumpurple);
+    background: linear-gradient(to right, #00fca8, #00ff2d);
     animation: rotate 20s infinite;
     opacity: 0.8;
   }
